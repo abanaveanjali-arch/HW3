@@ -1,0 +1,902 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container1 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+        flex-direction: column;
+      }
+      .container2 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+        flex-direction: column-reverse;
+      }
+      .container3 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+        flex-direction: row;
+      }
+      .container4 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+        flex-direction: row-reverse;
+      }
+      .container5 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+        justify-content: flex-start;
+      }
+      .container6 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+        justify-content: flex-end;
+      }
+      .container7 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+        justify-content: center;
+      }
+      .container8 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+        justify-content: space-evenly;
+      }
+      .container9 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+        justify-content: space-between;
+      }
+      .container10 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+        justify-content: space-around;
+      }
+      .container11 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+        align-items: flex-start;
+      }
+      .container12 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+        align-items: flex-end;
+      }
+      .container13 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+        align-items: center;
+      }
+      .container14 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+        align-items: baseline;
+      }
+      .container15 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      .container16 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+        flex-wrap: nowrap;
+      }
+      .container17 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+        flex-wrap: wrap-reverse;
+      }
+      .container18 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+      }
+      .container19 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+      }
+
+      .container20 {
+        display: flex;
+        background-color: gray;
+        height: 350px;
+        width: 100%;
+        align-items: stretch;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>flex direction column</h2>
+    <div class="container1">
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+
+    <h2>flex direction column-reverse</h2>
+    <div class="container2">
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+
+    <h2>flex direction row</h2>
+    <div class="container3">
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+    <h2>flex direction row-reverse</h2>
+    <div class="container4">
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+
+    <h2>justify content start</h2>
+    <div class="container5">
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+
+    <h2>justify content end</h2>
+    <div class="container6">
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+
+    <h2>justify content center</h2>
+    <div class="container7">
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+
+    <h2>justify content spece evenly</h2>
+    <div class="container8">
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+
+    <h2>justify content space between</h2>
+    <div class="container9">
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+
+    <h2>justify content space around</h2>
+    <div class="container10">
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+
+    <h2>align-items start</h2>
+    <div class="container11">
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+
+    <h2>align-items end</h2>
+    <div class="container12">
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+
+    <h2>align-items center</h2>
+    <div class="container13">
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+
+    <h2>align-items baseline</h2>
+    <div class="container14">
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+
+    <h2>flex wrap</h2>
+    <div class="container15">
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+
+    <h2>flex no wrap</h2>
+    <div class="container16">
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+
+    <h2>flex wrap reverse</h2>
+    <div class="container17">
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+      <div
+        style="background-color: blue; height: 90px; width: 90px; margin: 20px"
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+
+    <h2>order</h2>
+    <div class="container18">
+      <div
+        style="
+          background-color: blue;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+          order: 2;
+        "
+      >
+        box1
+      </div>
+      <div
+        style="
+          background-color: red;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+          order: 3;
+        "
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+          order: 4;
+        "
+      >
+        box 3
+      </div>
+      <div
+        style="
+          background-color: blueviolet;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+          order: 5;
+        "
+      >
+        box4
+      </div>
+      <div
+        style="
+          background-color: brown;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+          order: 1;
+        "
+      >
+        box5
+      </div>
+    </div>
+
+    <h2>grow</h2>
+    <div class="container19">
+      <div
+        style="
+          background-color: blue;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+          flex-grow: 1;
+        "
+      >
+        box1
+      </div>
+      <div
+        style="background-color: red; height: 90px; width: 90px; margin: 20px"
+      >
+        box 2
+      </div>
+      <div
+        style="
+          background-color: yellow;
+          height: 90px;
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+
+    <h2>align items strech</h2>
+    <div class="container20">
+      <div style="background-color: blue; width: 90px; margin: 20px">box1</div>
+      <div style="background-color: red; width: 90px; margin: 20px">box 2</div>
+      <div
+        style="
+          background-color: yellow;
+
+          width: 90px;
+          margin: 20px;
+        "
+      >
+        box 3
+      </div>
+    </div>
+  </body>
+</html>

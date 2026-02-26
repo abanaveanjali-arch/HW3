@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        position: absolute;
+        font-family: cursive;
+        color: brown;
+      }
+      .morning {
+        display: none;
+      }
+      .night {
+        display: block;
+      }
+      @media (prefers-color-scheme: light) {
+        .morning {
+          display: block;
+        }
+        .night {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="morning">GOOD MORNING</h1>
+    <h1 class="night">GOOD NIGHT</h1>
+    <video class="morning" src="morning.mp4" autoplay loop muted></video>
+    <video class="night" src="night.mp4" autoplay loop muted></video>
+  </body>
+</html>

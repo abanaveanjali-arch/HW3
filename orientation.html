@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .v1 {
+        display: block;
+      }
+      .v2 {
+        display: none;
+      }
+      @media (orientation: landscape) {
+        .v1 {
+          display: none;
+        }
+        .v2 {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <video class="v1" src="landscape.mp4" autoplay loop muted></video>
+    <video class="v2" src="port.mp4" autoplay loop muted></video>
+  </body>
+</html>
